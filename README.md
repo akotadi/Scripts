@@ -1,8 +1,5 @@
-[![README Header]]
-
 # Scripts 
 
-============
 
 This `Scripts` is a collection of scripts developed to made easier my life.
 
@@ -56,7 +53,8 @@ If any of them failed, will output the error and finish the execution.
 
 **Got a question?**
 
-File a GitHub [issue](https://github.com/akotadi/Scripts/issues) or send me an [![E-Mail](https://img.shields.io/badge/email-hello@cloudposse.com-blue.svg)][email].
+File a GitHub [issue](https://github.com/akotadi/Scripts/issues) or contact me at: 
+[![E-Mail](https://img.shields.io/badge/email-hello@cloudposse.com-blue.svg)][email].
 
 ## Contributing
 
@@ -89,7 +87,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 * Manuel CH: [<img align="right" title="Akotadi" src="http://www.iconninja.com/ico/16/github-4286.ico"/>][github] [akotadi][github]
 
 
-[![README Footer]]
 
   [github]: https://github.com/akotadi/
   [email]: mailto:manuel_7795@hotmail.com?subject=Build+Harness&body=https://github.com/akotadi/Scripts
