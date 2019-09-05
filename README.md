@@ -89,6 +89,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
   [github]: https://github.com/akotadi/
-  [email]: mailto:manuel_7795@hotmail.com?subject=Build+Harness&body=https://github.com/akotadi/Scripts
+  [email]: mailto:manuel_7795@hotmail.com?subject=Scripts-Repository&body=https://github.com/akotadi/Scripts
 
 
