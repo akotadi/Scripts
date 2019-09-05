@@ -84,7 +84,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ## Contributors
-* Manuel CH: [<img align="right" title="Akotadi" src="http://www.iconninja.com/ico/16/github-4286.ico"/>][github] [akotadi][github]
+* Manuel CH: [<img title="Akotadi" src="http://www.iconninja.com/ico/16/github-4286.ico"/>][github] [akotadi][github]
 
 
 
