@@ -10,9 +10,10 @@ It's 100% Open Source and licensed under the [GPL3](LICENSE).
 Table of Contents
 * [Scripts](#scripts)
   * [cpptest.bashrc](#cpptestbashrc)
+  * [vhdltest.bashrc](#vhdltestbashrc)
 * [Help](#help)
 * [Contributing](#scripts)
-  * [cpptest.bashrc](#Bug_Reports_&_Feature_Requests)
+  * [bugs](#Bug_Reports_&_Feature_Requests)
 * [License](#license)
 * [Contributors](#contributors)
 
@@ -47,6 +48,39 @@ g++ <cpp_file> -o <cpp_file_name>.out -std=c++<version_number> -DDEBUG
 ```
 
 If any of them failed, will output the error and finish the execution.
+At the end, the script will erase the execution file (`.out`).
+
+### vhdltest.bashrc
+
+This script was made to quickly test my `.vhdl` files. Typical uses are:
+```bash
+# Compile, execute and clean a vhdl file:
+testvhdl <vhdl_file>
+```
+If the `<vhdl_file>` doesn't end in `.vhd`, the script won't run. Also, if the `<vhdl_file>` doesn't exist, the script will exit.
+
+The script also defines some flags:
+* `-s <test_bench_vhdl_file>`  to simulate the vhdl file using `gtkwave`
+
+The script run these commands in order:
+
+```bash
+ghdl -a <vhdl_file>
+ghdl -e <vhdl_file_name>
+ghdl -r <vhdl_file_name>
+```
+
+And if you want to simulate the program:
+
+```bash
+ghdl -a <test_bench_vhdl_file>
+ghdl -e <test_bench_vhdl_file_name>
+ghdl -r <test_bench_vhdl_file_name> --vcd=<test_bench_vhdl_file_name>.vcd
+gtkwave <test_bench_vhdl_file_name>.vcd
+```
+
+If any of them failed, will output the error and finish the execution.
+At the end, the script will erase the object files (`.o`), the test bench file (`.vcd`) and the library work file (`.cf`).
 
 
 ## Help
