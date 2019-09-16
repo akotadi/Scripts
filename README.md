@@ -11,6 +11,7 @@ Table of Contents
 * [Scripts](#scripts)
   * [cpptest.bashrc](#cpptestbashrc)
   * [vhdltest.bashrc](#vhdltestbashrc)
+  * [ubuntu_icpc_config.bashrc](#ubuntu_icpc_configbashrc)
 * [Help](#help)
 * [Contributing](#scripts)
   * [bugs](#Bug_Reports_&_Feature_Requests)
@@ -81,6 +82,59 @@ gtkwave <test_bench_vhdl_file_name>.vcd
 
 If any of them failed, will output the error and finish the execution.
 At the end, the script will erase the object files (`.o`), the test bench file (`.vcd`) and the library work file (`.cf`).
+
+### ubuntu_icpc_config.bashrc
+
+This script was made to quickly config an Ubuntu enviroment for ACM ICPC contest. Typical uses are:
+```bash
+# Set up the system with the languages that I used and my editors with a few configurations
+ubuntu_icpc_config
+```
+
+The script also defines some flags:
+* `-d`  to use a few debug options
+
+The script made an update and upgrade at the beginning. Later, start with the languages configuration running this commands in order:
+
+```bash
+# Installing git
+sudo apt -y install git-core
+
+# Installing gcc
+sudo apt -y install gcc
+
+# Installing g++
+sudo apt -y install g++
+
+# Installing python
+sudo apt -y install python
+
+# Installing python3
+sudo apt -y install python3
+
+# Installing java
+sudo apt -y install openjdk-11-jdk
+```
+
+One finished the set up of the programming languages, begins the set up of the editors with the following commands:
+
+```bash
+# Vim
+sudo apt -y install vim
+
+# Sublime Text 3
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+sudo apt update
+sudo apt -y upgrade
+sudo apt -y install sublime-text
+
+# AStyle Formatter Plugin
+mkdir ~/.config/sublime-text-3/Packages/
+(cd ~/.config/sublime-text-3/Packages/ && git clone git://github.com/timonwong/SublimeAStyleFormatter.git)
+```
+
+If any of them failed, will output the error and finish the execution.
 
 
 ## Help
